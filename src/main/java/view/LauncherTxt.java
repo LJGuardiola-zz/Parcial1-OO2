@@ -5,7 +5,7 @@ import persistence.file.FileReceiptsRepository;
 
 public class LauncherTxt extends Launcher {
 
-    private final ReceiptsRepository repository = new FileReceiptsRepository("sales.txt");
+    private final ReceiptsRepository repository = new FileReceiptsRepository("receipts.txt");
 
     @Override
     public ReceiptsRepository getRepository() {
