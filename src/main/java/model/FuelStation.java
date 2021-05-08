@@ -23,6 +23,9 @@ public class FuelStation {
     }
 
     public List<Receipt> getReceipts(LocalDate start, LocalDate end) {
+        if (start == null || end == null){
+            throw new RuntimeException("Ingresa las fechas \"Desde\" y \"Hasta\"");
+        }
         if (start.isAfter(end)){
             throw new RuntimeException("La fecha \"Desde\" debe ser menor a la fecha \"Hasta\"");
         }
