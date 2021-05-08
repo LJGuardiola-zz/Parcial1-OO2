@@ -3,7 +3,7 @@ package view;
 import model.ReceiptsRepository;
 import persistence.file.FileReceiptsRepository;
 
-public class LauncherTxt extends Launcher {
+public class LauncherFile extends Launcher {
 
     private final ReceiptsRepository repository = new FileReceiptsRepository("receipts.txt");
 
